@@ -38,7 +38,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<a class="navigation__cta button" id="downloadButton" style="color: rgb(32, 70, 242);">DOWNLOAD MY CV</a>
+			<a class="navigation__cta button" id="downloadButton" style="color: #0d6efd;">DOWNLOAD MY CV</a>
 			<div class="navigation__burger">
 				<span class="navigation__burger-el navigation__burger-el--top"></span>
 				<span class="navigation__burger-el navigation__burger-el--middle"></span>
@@ -163,7 +163,7 @@
 		  </li>
 	
 		  <li data-date="01/11/2014">
-			<h2 style='color: rgb(88, 88, 88);font-size: 30px;font-weight: 800; font-family: "Merriweather Sans",sans-serif;'>Student's Virtual Assistant</h2>
+			<h2 style='color: rgb(88, 88, 88);font-size: 30px;font-weight: 800; font-family: "Merriweather Sans",sans-serif;'>Student Virtual Assistant</h2>
 			<em>Online Virtual Assistant / 2021</em>
 			<p style='color: rgb(158, 158, 158);font-size: 14px;font-weight: 700; font-family: "Merriweather Sans",sans-serif;'> 
 				As a dedicated virtual assistant, I have had the privilege of supporting students across the country in their academic pursuits. Leveraging my strong organizational and communication skills, I provide remote assistance to ensure their educational journey is smooth and successful. From managing their schedules and coordinating online classes to assisting with research and organizing study materials, I strive to create a productive and efficient learning environment for my clients. 
@@ -193,9 +193,14 @@
 			  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
 			</p>
 		  </li>
-  
 	  </ol>
 	</div> <!-- .events-content -->
+  </section>
+
+  <section>
+	<div style="display: flex; justify-content: center;">
+		<a class="navigation__cta button" id="downloadButton" style="color: #0d6efd;">DOWNLOAD MY CV</a>
+	</div>
   </section>
 
   <section id="clients" class="section-bg">
@@ -325,23 +330,28 @@
 			</div>
 		</section>
 		<!-- END SECTION: Work -->
-				<!-- SECTION: Contact -->
-				<section id="contact" class="contact" id="contact">
-					<h2 class="contact__heading title">Contact Me</h2>
-					<div class="contact__wrapper wrapper--large">
-						<div class="contact__visual" style="width: 40%;">
-							<img src="assets/img/formal.jpg" alt="Arjay Malaga">
-						</div>
-						<!-- Simple form setup: formspree.io -->
-						<form class="contact__form">
-							<input class="contact__form-el contact__form-el--name" type="text" placeholder="Your Name" spellcheck="false">
-							<input class="contact__form-el contact__form-el--email" type="email" placeholder="Your Email" spellcheck="false">
-							<textarea class="contact__form-el contact__form-el--message" placeholder="Your Message"></textarea>
-							<input class="contact__form-el contact__form-el--submit" type="submit" value="Send">
-						</form>
-					</div>
-				</section>
-				<!-- END SECTION: Contact -->
+
+
+		<!-- SECTION: Contact -->
+		<section id="contact" class="contact" id="contact">
+			<h2 class="contact__heading title">Contact Me</h2>
+			<div class="contact__wrapper wrapper--large">
+				<div class="contact__visual" style="width: 40%;">
+					<img src="assets/img/formal.jpg" alt="Arjay Malaga">
+				</div>
+				<!-- Simple form setup: formspree.io -->
+				<form action="index.php" method="post" class="contact__form">
+					<input class="contact__form-el contact__form-el--name" type="text" name="name" placeholder="Your Name" spellcheck="false">
+					<input class="contact__form-el contact__form-el--email" type="email" name="email" placeholder="Your Email" spellcheck="false">
+					<textarea class="contact__form-el contact__form-el--message" name="message" placeholder="Your Message"></textarea>
+					<input class="contact__form-el contact__form-el--submit" type="submit" name="send" value="Send">
+				</form>
+			</div>
+		</section>
+		<!-- END SECTION: Contact -->
+
+
+
 	</main>
 	<!-- SECTION: Footer -->
 	<footer class="footer">
