@@ -1,4 +1,4 @@
-const words = ["GRAPHIC DESIGNER", "BACKEND DEVELOPER", "CONTENT STRATEGIST"]; // Add more words if needed
+const words = ["LAYOUT ARTIST", "BACKEND DEVELOPER", "CONTENT STRATEGIST"]; // Add more words if needed
 let wordIndex = 0;
 let charIndex = 0;
 const typingSpeed = 100; // Adjust typing speed as needed
